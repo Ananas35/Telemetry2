@@ -1,2 +1,2 @@
-# Telemetry2
+# Telemetry
 Задания по телеметрии
