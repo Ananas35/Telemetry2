@@ -1,24 +1,41 @@
-'''
- Пользователь вводит месяц в виде целого числа от 1 до 12.
- Сообщить к какому времени года относится месяц (зима, весна,
- лето, осень).
- Напишите решения через list и через dict.
- '''
- seasons_list = ['winter', 'spring', 'summer', 'autumn']
- seasons_dict = {1 : 'winter', 2 : 'spring', 3 : 'summer', 4 : 'autumn'}
- month = int(input("Введите месяц по номеру "))
- if month ==1 or month == 12 or month == 2:
-         print(seasons_dict.get(1))
-         print(seasons_list[0])
- elif month == 3 or month == 4 or month ==5:
-     print(seasons_dict.get(2))
-     print(seasons_list[1])
- elif month == 6 or month == 7 or month == 8:
-     print(seasons_dict.get(3))
-     print(seasons_list[2])
+sezon_liste = ['Зима', 'Весна', 'Лето', 'Осень']
+month_num = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+month = int(input("Введите порядковый номер месяца "))
 
- elif month == 9 or month == 10 or month == 11:
-     print(seasons_dict.get(4))
-     print(seasons_list[3])
- else:
-         print("Такого месяца не существует")
+if month ==1 or month == 12 or month == 2:
+    print(sezon_liste[0])
+if month ==1:
+    print(month_num[0])
+if month == 2:
+    print(month_num[1])
+if month ==12:
+    print(month_num[11])
+
+if month == 3 or month == 4 or month ==5:
+    print(sezon_liste[1])
+if month == 3:
+     print(month_num[2])
+if month == 4:
+    print(month_num[3])
+if month == 5:
+    print(month_num[4])
+
+if month == 6 or month == 7 or month == 8:
+    print(sezon_liste[2])
+if month == 6:
+    print(month_num[5])
+if month == 7:
+    print(month_num[6])
+if month == 8:
+    print(month_num[7])
+
+if month == 9 or month == 10 or month == 11:
+    print(sezon_liste[3])
+if month == 9:
+    print(month_num[8])
+if month == 10:
+    print(month_num[9])
+if month == 11:
+    print(month_num[10])
+elif month > 12:
+       print("Такого месяца не существует")
