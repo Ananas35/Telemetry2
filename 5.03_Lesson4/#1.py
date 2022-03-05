@@ -7,3 +7,4 @@ while nepusto:
     else:
         file.write(line + '\n')
 file.close()
+#
