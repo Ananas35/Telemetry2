@@ -2,9 +2,9 @@ dictionary = {"Eins": "Один", "Zwei": "Два", "Drei": "Три", "Vier": "�
 
 text_de = ''
 with open('4-file.txt', 'r') as file_de:
-    text_en = file_de.read()
+    text_de = file_de.read()
 
-text_ru = text_en
+text_ru = text_de
 for de, ru in dictionary.items():
     text_ru = text_ru.replace(de, ru)
 
